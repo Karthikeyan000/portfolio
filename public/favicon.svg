@@ -1,0 +1,109 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 512 512"
+  width="512"
+  height="512"
+>
+  <defs>
+    <linearGradient
+      id="kGradient"
+      x1="120"
+      y1="80"
+      x2="410"
+      y2="430"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#F5FF3B"/>
+      <stop offset="0.5" stop-color="#E9FF3B"/>
+      <stop offset="1" stop-color="#BFD92A"/>
+    </linearGradient>
+
+    <filter
+      id="glow"
+      x="-50%"
+      y="-50%"
+      width="200%"
+      height="200%"
+    >
+      <feGaussianBlur
+        stdDeviation="8"
+        result="blur"
+      />
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect
+    x="8"
+    y="8"
+    width="496"
+    height="496"
+    rx="105"
+    fill="#0B0C0E"
+  />
+
+  <!-- Subtle border -->
+  <rect
+    x="14"
+    y="14"
+    width="484"
+    height="484"
+    rx="99"
+    fill="none"
+    stroke="#24272C"
+    stroke-width="4"
+  />
+
+  <!-- K Logo -->
+  <g
+    fill="url(#kGradient)"
+    filter="url(#glow)"
+  >
+
+    <!-- Vertical -->
+    <path
+      d="
+        M118 92
+        H177
+        V420
+        H118
+        Z
+      "
+    />
+
+    <!-- Upper diagonal -->
+    <path
+      d="
+        M177 239
+        L330 92
+        H408
+        L224 264
+        Z
+      "
+    />
+
+    <!-- Lower diagonal -->
+    <path
+      d="
+        M203 241
+        L408 420
+        H325
+        L177 284
+        Z
+      "
+    />
+
+    <!-- Dot -->
+    <circle
+      cx="422"
+      cy="394"
+      r="28"
+    />
+
+  </g>
+</svg>

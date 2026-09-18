@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --ink: #101114;
+  --muted: #686c75;
+  --line: #dfe2e7;
+  --paper: #f6f7f9;
+  --white: #ffffff;
+
+  --accent: #e9ff3b;
+
+  --dark: #0c0d0f;
+  --dark-secondary: #15171a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  scroll-margin-top: 80px;
+}

@@ -1,0 +1,146 @@
+.section {
+  padding: 105px 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 22px;
+
+  margin-bottom: 48px;
+}
+
+.section-heading .section-number {
+  padding: 6px 8px;
+
+  border: 1px solid #d5d8dd;
+
+  color: #999da5;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  font-size: 42px;
+  font-weight: 700;
+
+  letter-spacing: -1.8px;
+  line-height: 1.1;
+}
+
+.section-heading p {
+  margin-top: 7px;
+
+  color: #686c75;
+
+  font-size: 14px;
+}
+
+.skill-card {
+  min-height: 190px;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe2e7;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #b9bdc4;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+.skill-title {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 18px;
+}
+
+.skill-title svg {
+  color: #101114;
+
+  font-size: 18px;
+}
+
+.skill-title p {
+  margin: 0;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 0.8px;
+}
+
+.skill-chip {
+  height: 28px !important;
+
+  background: #f0f1f3 !important;
+
+  border: 1px solid #e0e2e6 !important;
+
+  border-radius: 2px !important;
+
+  font-family: "IBM Plex Mono", monospace !important;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+}
+
+.skill-chip .MuiChip-label {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 75px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 65px 0;
+  }
+
+  .section-heading {
+    gap: 13px;
+
+    margin-bottom: 32px;
+  }
+
+  .section-heading h2 {
+    font-size: 29px;
+  }
+
+  .section-heading p {
+    font-size: 12px;
+  }
+
+  .skill-card {
+    min-height: auto;
+
+    padding: 20px;
+  }
+}

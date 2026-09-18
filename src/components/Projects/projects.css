@@ -1,0 +1,176 @@
+.projects-section {
+  padding: 105px 0;
+
+  background: #0c0d0f;
+
+  color: #ffffff;
+}
+
+.section-heading.dark .section-number {
+  border-color: #3b3e43;
+  color: #777c85;
+}
+
+.section-heading.dark h2 {
+  color: #ffffff;
+}
+
+.section-heading.dark p {
+  color: #858a93;
+}
+
+.project-card {
+  display: flex;
+
+  gap: 28px;
+
+  padding: 28px;
+
+  background: #15171a;
+
+  border: 1px solid #292c31;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #545961;
+}
+
+.project-number {
+  min-width: 30px;
+
+  padding-top: 4px;
+
+  color: #60656d;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.project-name {
+  color: #ffffff;
+
+  font-size: 24px !important;
+  font-weight: 600 !important;
+
+  letter-spacing: -0.5px;
+}
+
+.project-type {
+  margin-top: 4px !important;
+
+  color: #7f858e;
+
+  font-family: "IBM Plex Mono", monospace !important;
+  font-size: 10px !important;
+
+  letter-spacing: 0.8px;
+
+  text-transform: uppercase;
+}
+
+.project-date {
+  color: #7f858e;
+
+  font-family: "IBM Plex Mono", monospace !important;
+  font-size: 10px !important;
+
+  white-space: nowrap;
+}
+
+.project-description {
+  max-width: 850px;
+
+  margin: 17px 0 !important;
+
+  color: #a3a8b0;
+
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+
+.project-chip {
+  height: 26px !important;
+
+  color: #c8ccd2 !important;
+
+  background: #202328 !important;
+
+  border: 1px solid #30343a !important;
+
+  border-radius: 2px !important;
+
+  font-family: "IBM Plex Mono", monospace !important;
+  font-size: 9px !important;
+  font-weight: 500 !important;
+}
+
+.project-impact {
+  display: flex;
+
+  gap: 6px;
+
+  color: #92979f;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+.project-impact svg {
+  flex: 0 0 auto;
+
+  margin-top: 2px;
+
+  color: #bcd52d;
+
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .projects-section {
+    padding: 75px 0;
+  }
+
+  .project-card {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 65px 0;
+  }
+
+  .project-card {
+    display: block;
+
+    padding: 20px;
+  }
+
+  .project-number {
+    margin-bottom: 10px;
+  }
+
+  .project-name {
+    font-size: 21px !important;
+  }
+
+  .project-description {
+    font-size: 13px !important;
+  }
+
+  .project-date {
+    margin-top: 8px;
+  }
+
+  .project-impact {
+    margin-bottom: 7px;
+  }
+}

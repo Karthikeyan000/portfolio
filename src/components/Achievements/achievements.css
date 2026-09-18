@@ -1,0 +1,84 @@
+.achievements-section {
+  background: #eef0f3;
+}
+
+.achievement-card {
+  padding: 32px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe2e7;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.achievement-icon {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 22px;
+
+  background: #101114;
+
+  color: #e9ff3b;
+}
+
+.achievement-icon svg {
+  font-size: 23px;
+}
+
+.achievement-label {
+  color: #777c84;
+
+  font-family: "IBM Plex Mono", monospace !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+
+  letter-spacing: 1.2px;
+}
+
+.achievement-title {
+  margin: 7px 0 13px !important;
+
+  color: #101114;
+
+  font-size: 27px !important;
+  font-weight: 600 !important;
+
+  letter-spacing: -0.8px;
+}
+
+.achievement-description {
+  max-width: 850px;
+
+  color: #686d76;
+
+  font-size: 13px !important;
+  line-height: 1.65 !important;
+}
+
+@media (max-width: 600px) {
+  .achievement-card {
+    padding: 22px;
+  }
+
+  .achievement-title {
+    font-size: 23px !important;
+  }
+
+  .achievement-description {
+    font-size: 12px !important;
+  }
+}
